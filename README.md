@@ -13,7 +13,6 @@ Data structures for storing game status**
 -The items in the inventory are assigned with a damaging value. For instance, ‘machine gun’ = 30 health points (hp), ‘knife’ = 10 hp, etc. Similarly, the weapons used by monsters will have their own hp values. At every turn the damage on health will be resulted. The one with health lower than or equal to zero loses. 
 -If they lose then game over, otherwise the quest with scenarios and monsters will continue. 
  
- 
 **Dynamic memory management**
 The health of the player as well as the monster’s health will be continuously updated during the battle. Along with that the inventory based on the scenarios will be dynamically updated as well.
  
