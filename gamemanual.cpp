@@ -4,5 +4,5 @@
 
 string gamemanual()
 {
-  cout << Game information subject to change << endl;
+  cout << "Game information subject to change" << endl;
 }
