@@ -7,7 +7,7 @@ void gamecharacters(int hp, int ap, string &name){
   int initialhp = hp;
   int choose, chooseop=0;
   cin >> choose;
-  while (choose >3 && choose <0){
+  while (choose >3 || choose <0){
     cout<< " No such option. Choose between 1 and 2:";
     cin >> choose;
   }
@@ -23,7 +23,7 @@ void gamecharacters(int hp, int ap, string &name){
     cout << "1. " << op[0] << ", 2. " << op[1] << ", 3. "<< op[2] <<endl;
     cout << "operator 1, 2 or 3?" << endl;
     cin >> chooseop;
-    while (chooseop>4 && chooseop<0){
+    while (chooseop>4 || chooseop<0){
       cout << "No character. Must choose from 1,2 or 3"<<endl;
       cout << "operator 1, 2 or 3? ";
       cin >> chooseop;
