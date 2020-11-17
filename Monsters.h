@@ -3,8 +3,8 @@
 #define monsters_h
 using namespace std;
 
-struct monsters{
-  Monster(int hp, int ap, string name);
+struct Monsters{
+  monster(int hp, int ap, string name);
 };  
 
 #endif
