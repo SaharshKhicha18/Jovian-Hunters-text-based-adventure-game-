@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include "globalvar.h"
 #include <string>
 using namespace std;
 
@@ -18,8 +19,6 @@ void gamecharacters(int hp, int ap, string &name){
     cout << "Get ready for Jovian Hunters, " << name << ". The monsters are after you"<< endl;
   }
   if (choose == 2){
-    string op[3] = {"Crimemastergogo","Thunderstrike","Degeneration X"};
-    cout << "Choose the character name that matches you personality ";
     cout << "1. " << op[0] << ", 2. " << op[1] << ", 3. "<< op[2] <<endl;
     cout << "operator 1, 2 or 3?";
     cin >> chooseop;
