@@ -50,9 +50,3 @@ void ammunationshop(map<string, int> attack_power)
   }
 
 }
-
-int main()
-{
-  map<string, int> attack_power;
-  ammunationshop(attack_power);
-}
