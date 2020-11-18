@@ -2,4 +2,5 @@
 #include "events.h"
 using namespace std;
 
-void war(
+void war( Charac& darsh, Monst& saharsh){
+  
