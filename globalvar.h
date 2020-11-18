@@ -13,7 +13,7 @@ int level3m[][2] = {{70, 34}, {65, 29}, {63, 24}};
 std::string level3names[] = {"Boom Chick-a", "Hypno Toad", "Rocksteady"};
 
 int level4m[][2] = {{70, 34}, {65, 29}, {63, 24}};
-std::string level4names[] = {"Blue Eyes White Dragon", "Derpygama", "Squirrl Nut Zipper"};
+std::string level4names[] = {"Blue Eyes White Dragon", "Derpygama", "Squirrel Nut Zipper"};
 
 //step counter
 #endif 
