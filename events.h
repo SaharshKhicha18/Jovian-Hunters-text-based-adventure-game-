@@ -1,3 +1,4 @@
+void warevent();
 void monsterevent( );
 void hospitalevent( );
 void ammuoevent( );
