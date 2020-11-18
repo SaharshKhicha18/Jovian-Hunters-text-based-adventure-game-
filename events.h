@@ -1,0 +1,4 @@
+void monsterevent( );
+void hospitalevent( );
+void ammuoevent( );
+void pawnevent( );
