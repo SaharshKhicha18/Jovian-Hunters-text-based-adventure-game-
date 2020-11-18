@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <ctime>
 using namespace std;
 
 void game_run(string character, int health_points, int attack_power)
@@ -8,6 +9,7 @@ void game_run(string character, int health_points, int attack_power)
   cout << "Your Journey Begins!" << endl;
   cout << "Choose a direction to play, E, W, N, S" << endl;
   char playerinput;
+  srand (time(0));
   cin >> playerinput;
   While (playerinput != 'Q')
   {
