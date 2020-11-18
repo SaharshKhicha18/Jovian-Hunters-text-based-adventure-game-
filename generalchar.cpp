@@ -3,7 +3,7 @@
 using namespace std;
 
 void character(int hp, int ap, string name){
-  hitp = hp;
-  attackp = ap;
-  charname = name;
+  Character.hitp = hp;
+  Character.attackp = ap;
+  Character.charname = name;
 };
