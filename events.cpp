@@ -2,4 +2,4 @@
 #include "events.h"
 using namespace std;
 
-void battle (
+void war(
