@@ -4,7 +4,9 @@
 using namespace std;
 
 struct Monsters{
-  monster(int hp, int ap, string name);
+  int hitp;
+  int attackp;
+  string name;
 };  
 
 #endif
