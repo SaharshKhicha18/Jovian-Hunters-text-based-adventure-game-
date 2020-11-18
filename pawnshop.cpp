@@ -77,10 +77,3 @@ void pawnshop(map<string, int> attack_power, int health_points)
   }
 
 }
-
-int main()
-{
-  map<string, int> attack_power;
-  int health_points;
-  pawnshop(attack_power, health_points);
-}
