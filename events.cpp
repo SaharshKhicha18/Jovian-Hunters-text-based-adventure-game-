@@ -24,7 +24,7 @@ void war( charhp, charap, map<string, int> inventory, foehp, forap, string monst
       while (flag == true){
         if (choosein <=1 && choosein >=0){
           if (choosein == 1){
-            cout << "You are attacking the "<< monster << " with a " << " << ; //have to figure how to add key here(monster name)
+            cout << "You are attacking the "<< monster << " with a " << " << ; //have to figure how to add key here(weapon name)
             damage = inventory[key]; //figure this out as well
             foehp -= damage; 
           }
