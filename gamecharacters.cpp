@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include "globalvar.h"
+#include "generalchar.h"
 #include <string>
 using namespace std;
 
@@ -41,5 +42,7 @@ void gamecharacters(int hp, int ap, string &name){
     }
   }
 }
-      
+
+  
+
     
