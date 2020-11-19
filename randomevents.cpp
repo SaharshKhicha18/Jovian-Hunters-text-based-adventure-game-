@@ -26,8 +26,8 @@ switch (randomnum){
   default:
     #keep walking
     eventhap = 0;
-    steps_before++;
-    gamepoints--;
+    gamepoints++;
+    gamepoints_at_end--;
     break;
 }
     
