@@ -8,10 +8,10 @@ void war( charhp, charap, map<string, int> inventory, foehp, forap, string monst
   while (charhp >0 && foehp >0){
     //player's turn
     int choosein, i = 1, damage = 0; 
-    if (inventory.size == 0){
+    if (inventory.size() == 0){
       cout << "Your inventory is empty" << endl;
     }
-    if (inventory.size = 1){
+    if (inventory.size() = 1){
       map<string, int>::iterator itr;
       for(itr = inventory.begin(); itr != inventory.end(); itr++){
       cout << i << ") " << "You only have " << (*itr).first << "with damage of " << (*itr).second << "." <<endl;
@@ -25,7 +25,7 @@ void war( charhp, charap, map<string, int> inventory, foehp, forap, string monst
         if (choosein <=1 && choosein >=0){
           if (choosein == 1){
             cout << "You are attacking the "<< monster << " with a " << " << ; //have to figure how to add key here(monster name)
-            damage = inventory[key];
+            damage = inventory[key]; //figure this out as well
             foehp -= damage; 
           }
           if (choosein == 0){
@@ -36,8 +36,9 @@ void war( charhp, charap, map<string, int> inventory, foehp, forap, string monst
         }
         else{
           cout << "Oops! No such option in the inventory. Choose again: ";
-          cin << choosein;
+          cin >> choosein;
         }
+      }
     }
     if (inventory.size <=3 && inventory.size > 1){
       i = 1;
