@@ -29,7 +29,12 @@ int main(){
   }
   while (charhp >0 && gamepoints_at_end >0){
     randomevents();
-    if (
+    if (eventhap == 1 && charhp>0){
+      cout << "Lets move forward as you still have " << gamepoints_at_end << " steps to get to the Kohinoor"<<endl;
+      gamepoints_at_end--;
+      gamepoints = 1;
+    }
+  }
 }
 
 
