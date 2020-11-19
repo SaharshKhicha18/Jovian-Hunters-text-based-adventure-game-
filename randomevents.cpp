@@ -12,7 +12,7 @@ switch (randomnum){
   case 8 && 9:
     #ammunation will appear
   case 10:
-    #monsters will appear
+    #pawn shop will appear
   default:
     #keep walking
     #steps towards the kohinoor will increase by 1.
