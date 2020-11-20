@@ -1,12 +1,14 @@
 #ifndef globalvar_h
 #define globalvar_h
+#include <vector>
+#include <string>
 
 //All necessary variables
 int charhp;
 int charap;
-int foehp;
 string charname;
-
+vector<string> inventory_p;
+vector<int> inventory_pvalue;
 
 //All monsters 
 int monstersarray[][11] = {{40, 5}, {45, 7}, {43, 4},{60, 12}, {63, 19}, {55, 21},{70, 34}, {65, 29}, {63, 24},{70, 34}, {65, 29}, {63, 24}};
