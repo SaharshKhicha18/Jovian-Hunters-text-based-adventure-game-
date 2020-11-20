@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cstdlib>
-using namespace std;
-int eventhap = 1; 
+using namespace std; 
 int randnum = rand(25);
 while loop{
 switch (randomnum){
