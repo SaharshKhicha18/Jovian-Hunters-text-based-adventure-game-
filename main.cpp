@@ -1,5 +1,10 @@
 #include <iostream>
-#include ...
+#include <string>
+#include <vector>
+#include <cstdlib>
+#include <ctime>
+#include <fstream>
+#include <Jovian.h>
 using namespace std;
 
 int main()
