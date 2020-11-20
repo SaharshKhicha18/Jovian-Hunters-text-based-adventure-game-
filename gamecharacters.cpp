@@ -5,8 +5,7 @@
 #include <string>
 using namespace std;
 
-void gamecharacters(int& charhp, int& charap, string &charname){
-  int initialhp = charhp;
+void gamecharacters(string &charname){
   int choose, chooseop=0;
   cin >> choose;
   while (choose >=3 || choose <=0){
@@ -15,9 +14,9 @@ void gamecharacters(int& charhp, int& charap, string &charname){
   }
   if (choose == 1){
     cout<< "Please input the name: ";
-    cin >> name;
+    cin >> charname;
     cout << endl;
-    cout << "Get ready for Jovian Hunters, " << name << ". The monsters are after you"<< endl;
+    cout << "Get ready for Jovian Hunters, " << charname << ". The monsters are after you"<< endl;
   }
   if (choose == 2){
     cout << "1. " << op[0] << ", 2. " << op[1] << ", 3. "<< op[2] <<endl;
@@ -30,15 +29,15 @@ void gamecharacters(int& charhp, int& charap, string &charname){
     }
     if (chooseop == 1){
       name = op[0];
-      cout << "Get ready for Jovian Hunters, " << name << ". The monsters are after you"<< endl;
+      cout << "Get ready for Jovian Hunters, " << charname << ". The monsters are after you"<< endl;
     }
     if (chooseop == 2){
       name = op[1];
-      cout << "Get ready for Jovian Hunters, " << name << ". The monsters are after you"<< endl;
+      cout << "Get ready for Jovian Hunters, " << charname << ". The monsters are after you"<< endl;
     }
     if (chooseop == 3){
       name = op[2];
-      cout << "Get ready for Jovian Hunters, " << name << ". The monsters are after you"<< endl;
+      cout << "Get ready for Jovian Hunters, " << charname << ". The monsters are after you"<< endl;
     }
   }
 }
