@@ -5,7 +5,7 @@
 #include <string>
 using namespace std;
 
-void gamecharacters(int hp, int ap, string &name){
+void gamecharacters(int& hp, int& ap, string &name){
   int initialhp = hp;
   int choose, chooseop=0;
   cin >> choose;
