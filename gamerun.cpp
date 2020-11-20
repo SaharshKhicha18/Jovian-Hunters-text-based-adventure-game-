@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
+#include <ctime>
 #include <vector>
 #include "Jovian.h" 
 
@@ -20,11 +22,6 @@ void Gamerun( int &charhp, int &charap, vector<string>& inventory_p, vector<int>
   cout << endl;
   cout << endl;
   
-  string line;
-  ifstream introduction ();
-  while(getline(introduction, line)){
-    cout<< line <<endl;
-  }
   cout << charname << " choose a direction to begin. Input E, W, N, S for East, West, North and South respectively! -> ";
   cin >> direc;
   cout << endl;
