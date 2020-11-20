@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <map>
+#include <vector>
 using namespace std;
 
 void hospital(vector<string> inventory_p, vector<int> inventory_pvalue, int health_points)
