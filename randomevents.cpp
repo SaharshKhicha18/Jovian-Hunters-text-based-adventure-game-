@@ -9,20 +9,21 @@ switch (randomnum){
     #monsters will appear
     cout << "Beware! There is a monster ahead!" << endl;
     cout << "It is a " << monster << endl;
-    war(charhp, charap, map<string, int> inventory, foehp, forap, string monster);
+    if (
+    war( charhp, charap, inventory_p, inventory_pvalue, monsternames, monsters_info);
   case 6 && 7:
     #hospital will appear
     cout << "There is a hospital ahead!" << endl;
     cout << " A chance for you to revive your health points" << endl;
-    hospital(map<string, int> inventory, charhp);
+    hospital(inventory_p, inventory_pvalue, health_points);
   case 8 && 9:
     #ammunation will appear
     cout << "There is an ammunition shop at the end of this road. You can collect weapons to put it in your inventory." <<endl;
-    ammunationshop(map<string, int> inventory);
+    ammunationshop(inventory_p, inventory_pvalue);
   case 10:
     #pawn shop will appear
     cout << "WOW! A pawn shop ahead. Can help you revive heath points and attack power." << endl;
-    pawnshop(map<string, int> inventory, charhp);
+    pawnshop(inventory_p, inventory_pvalue, health_points);
   default:
     #keep walking
     eventhap = 0;
