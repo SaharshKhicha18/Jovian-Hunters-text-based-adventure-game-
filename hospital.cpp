@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cstdlib>
+#include "Jovian.h" 
+#include <ctime>
 using namespace std;
 
 void hospital(vector<string> &inventory_p, vector<int> &inventory_pvalue, int &health_points)
