@@ -3,9 +3,9 @@
 #include <map>
 using namespace std;
 
-void hospital(map<string, int> attack_power, int health_points)
+void hospital(vector<string> inventory_p, vector<int> inventory_pvalue, int health_points)
 {
-  if (attack_power.size() = 3)
+  if (inventory_p.size() = 3)
   {
     cout << "Opps! You inventory is full! Use what you got to hunt some monsters down first!" << endl;
   }
@@ -43,7 +43,8 @@ void hospital(map<string, int> attack_power, int health_points)
       else
       {
         cout << "You get " << health_power[random_option1] << " with attack power of " << hp_sp_increase[random_option1] << endl;
-        attack_power[health_power[random_option1]] = hp_sp_increase[random_option1];
+        inventory_p.push_back(health_power[random_option1]);
+        inventory_pvalue.push_back(hp_sp_increase[random_option1]);
         cout << health_power[random_option1] << " is added to you inventory, you may use it during war with monsters " << endl;
       }
       break;
@@ -59,7 +60,8 @@ void hospital(map<string, int> attack_power, int health_points)
       else
       {
         cout << "You get " << health_power[random_option2] << " with attack power of " << hp_sp_increase[random_option2] << endl;
-        attack_power[health_power[random_option2]] = hp_sp_increase[random_option2];
+        inventory_p.push_back(health_power[random_option2]);
+        inventory_pvalue.push_back(hp_sp_increase[random_option2]);
         cout << health_power[random_option2] << " is added to you inventory, you may use it during war with monsters " << endl;
       }
       break;
@@ -75,7 +77,8 @@ void hospital(map<string, int> attack_power, int health_points)
       else
       {
         cout << "You get " << health_power[random_option3] << " with attack power of " << hp_sp_increase[random_option3] << endl;
-        attack_power[health_power[random_option3]] = hp_sp_increase[random_option3];
+        inventory_p.push_back(health_power[random_option3]);
+        inventory_pvalue.push_back(hp_sp_increase[random_option3]);
         cout << health_power[random_option3] << " is added to you inventory, you may use it during war with monsters " << endl;
       }
       break;
