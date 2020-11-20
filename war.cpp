@@ -28,7 +28,7 @@ void war( charhp, charap, vector<string> inventory_p, vector<int> inventory_pval
         if (choosein <=1 && choosein >=0){
           if (choosein == 1){
             cout << "You are attacking the "<< monster << " with a " << " << ; inventory_p[0]
-            damage = inventory[key]; //figure this out as well
+            damage = inventory_pvalue[0]; //figure this out as well
             foehp -= damage; 
           }
           if (choosein == 0){
@@ -43,14 +43,17 @@ void war( charhp, charap, vector<string> inventory_p, vector<int> inventory_pval
         }
       }
     }
-    if (inventory.size <=3 && inventory.size > 1){
-      i = 1;
-      map<string, int>::iterator itr;
-      for(itr = inventory.begin(); itr != inventory.end(); itr++){
-      cout << i << ") " << "You have " << (*itr).first << "with damage of " << (*itr).second << "." <<endl;
+    if (inventory_p.size() <=3 && inventory_p.size() > 1){
+      i = 0;
+      for(int index = 0; index < inventory_p.size(); index++) {
+      cout << i+1 << ") " << "You have " << inventory_p[i] << "with damage of " << inventory_pvalue[i] << "." << endl;
       i++;
       }
       cout << "Choose one option number from above?";
+      for (int count = 1; count <= i; count++){
+         cout << "Input " << count <<  " to pick the weapon" <<endl;
+      }
+      cout << "Input 0 if you do not want to use any weapon" <<endl;
     }
     cin >> choosein;
     if (choosein == 1){
