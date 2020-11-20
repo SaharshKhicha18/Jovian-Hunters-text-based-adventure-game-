@@ -5,8 +5,8 @@
 #include <string>
 using namespace std;
 
-void gamecharacters(int& hp, int& ap, string &name){
-  int initialhp = hp;
+void gamecharacters(int& charhp, int& charap, string &charname){
+  int initialhp = charhp;
   int choose, chooseop=0;
   cin >> choose;
   while (choose >=3 || choose <=0){
