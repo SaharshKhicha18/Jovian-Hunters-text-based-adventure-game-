@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <Jovian.h>
 using namespace std; 
 
 void random(int &gamepoints)
