@@ -9,7 +9,7 @@ switch (randomnum){
     #monsters will appear
     cout << "Beware! There is a monster ahead!" << endl;
     cout << "It is a " << monster << endl;
-    war( charhp, charap, inventory_p, inventory_pvalue, monsternames, monsters_info);
+    war(charhp, charap, inventory_p, inventory_pvalue, monsternames, monsters_info);
     if (charap>0){
       gamepoints +=10;
     }
@@ -21,7 +21,7 @@ switch (randomnum){
     #hospital will appear
     cout << "There is a hospital ahead!" << endl;
     cout << " A chance for you to revive your health points" << endl;
-    hospital(inventory_p, inventory_pvalue, health_points);
+    hospital(inventory_p, inventory_pvalue, charhp);
     break;
   case 8 && 9:
     #ammunation will appear
@@ -31,7 +31,7 @@ switch (randomnum){
   case 10:
     #pawn shop will appear
     cout << "WOW! A pawn shop ahead. Can help you revive heath points and attack power." << endl;
-    pawnshop(inventory_p, inventory_pvalue, health_points);
+    pawnshop(inventory_p, inventory_pvalue, charhp);
     break;
   default:
     #keep walking
