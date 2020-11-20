@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <Jovian.h>
 using namespace std;
 
 void pawnshop(vector<string> &inventory_p, vector<int> &inventory_pvalue, int &health_points)
