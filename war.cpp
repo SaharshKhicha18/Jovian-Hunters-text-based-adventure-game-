@@ -1,13 +1,12 @@
 #include <iostream>
 #include "events.h"
 #include "globalvar.h"
-#include <map>
 // if inventory is vector 
 #include <vector>
 using namespace std;
 // what if the inventory consist of two vectors 
 void war( charhp, charap, vector<string> inventory_p, vector<int> inventory_pvalue , foehp, forap, string monster){
-  while (charhp >0 && foehp >0){
+  while (charhp > 0 && foehp >0){
     //player's turn
     int choosein, i = 1, damage = 0; 
     if (inventory_p.size() == 0){
@@ -25,8 +24,10 @@ void war( charhp, charap, vector<string> inventory_p, vector<int> inventory_pval
         if (choosein <=1 && choosein >=0){
           if (choosein == 1){
             cout << "You are attacking the "<< monster << " with a " << inventory_p[0] << endl;
-            damage = inventory_pvalue[0]; //figure this out as well
-            foehp -= damage; 
+            damage = inventory_pvalue[0];
+            foehp -= damage;
+            inventory_p.erase (inventory_p.begin());
+            inventory_pvalue.erase (inventory_pvalue.begin());
           }
           if (choosein == 0){
             cout << "You attack the monster with you hands" << endl;
@@ -59,17 +60,23 @@ void war( charhp, charap, vector<string> inventory_p, vector<int> inventory_pval
         if (choosein == 3){
           cout << "You are attacking the "<< monster << " with a " << inventory_p[2] << endl;
           damage = inventory_pvalue[2]; 
-          foehp -= damage; 
+          foehp -= damage;
+          inventory_p.erase (inventory_p.begin()+2);
+          inventory_pvalue.erase (inventory_pvalue.begin()+2);
         }
         if (choosein == 2){
           cout << "You are attacking the "<< monster << " with a " << inventory_p[1] << endl;
           damage = inventory_pvalue[1];
-          foehp -= damage; 
+          foehp -= damage;
+          inventory_p.erase (inventory_p.begin()+1);
+          inventory_pvalue.erase (inventory_pvalue.begin()+1);
         }
         if (choosein == 1){
           cout << "You are attacking the "<< monster << " with a " << inventory_p[0] << endl;
           damage = inventory_pvalue[0];
-          foehp -= damage; 
+          foehp -= damage;
+          inventory_p.erase (inventory_p.begin());
+          inventory_pvalue.erase (inventory_pvalue.begin());
         }
         if (choosein == 0){
           cout << "You attack the monster with you hands" << endl;
