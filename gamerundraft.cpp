@@ -21,6 +21,8 @@ int main(){
   
   cout << "Choose you character name. You can choose you own name or choose the options provided to you by Jovian Hunters!" << endl;
   gamecharacters( name);
+  cout << endl;
+  cout << endl;
   
   string line;
   ifstream introduction ();
