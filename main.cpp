@@ -15,6 +15,8 @@ switch ( input )
 {
 case 1:
   //start a new game
+    void Gamerun( int &charhp, int &charap, vector<string>& inventory_p, vector<int>& inventory_pvalue, vector<string>& monsternames, vector<vector<int>>
+& monsters_info);
   break;
 case 2:
   //load game from saved data
