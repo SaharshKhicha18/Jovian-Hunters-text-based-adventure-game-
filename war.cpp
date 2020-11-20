@@ -5,7 +5,7 @@
 using namespace std;
 
 
-void war( int charhp, int charap, vector<string> inventory_p, vector<int> inventory_pvalue , vector<string> monsternames, vector<vector<int>> monsters_info){
+void war( int &charhp, int &charap, vector<string>& inventory_p, vector<int>& inventory_pvalue , vector<string>& monsternames, vector<vector<int>>& monsters_info){
   int choosein; int damage = 0;
   srand(time(0));
   int randommonster = rand() % (monsternames.size()-1);
