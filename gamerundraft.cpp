@@ -1,17 +1,14 @@
 #include <iostream>
 #include <string>
-#include <map>
+#include <vector>
 #include "events.h"
 #include "gamecharacters.h"
 
-int main(){
-  int charhp = 100;
-  int charap = 30;
-  int foehp;
-  string charname = "";
+void Gamerun( int &charhp, int &charap, vector<string>& inventory_p, vector<int>& inventory_pvalue, vector<string>& monsternames, vector<vector<int>>
+& monsters_info){
   
-  int gamepoints_at_end = 80;
-  gamepoints = 0;
+  int gamepoints = 0;
+  
   
   //Introduction of the game
   cout << "Welcome to the Jovian Hunters! An adventurous journey."<<endl;
@@ -37,6 +34,7 @@ int main(){
       gamepoints = 1;
     }
   }
+}
 }
 
 
