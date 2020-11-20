@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cstdlib>
-#include "globalvar.h"
-#include "generalchar.h"
+#include "Jovian.h"
 #include <string>
 using namespace std;
 
