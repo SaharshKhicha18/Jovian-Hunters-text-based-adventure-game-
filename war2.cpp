@@ -22,11 +22,14 @@ void war( int charhp, int charap, vector<string> inventory_p, vector<int> invent
       cout << "You got only hands left;)" << endl;
       cout << "Input 0 to punch!: ";
       cin >> choosein;
+      cout << endl;
       while (choosein == 0)
       {
         cout << "You attack the monster with your hands" << endl;
         damage = charap;
         foehp -= damage;
+        cout << endl;
+        cout << endl;
         //monster attacks
         cout << monsternames[randommonster] << " is attacking you!!! " << " watch out!! " << endl;
         charhp -= foeap;
@@ -48,6 +51,7 @@ void war( int charhp, int charap, vector<string> inventory_p, vector<int> invent
           cout << "Your hp is " << charhp << endl;
           cout << "Its your chance to redeem youself!" << endl;
           cin >> choosein;
+          cout << endl;
         }
       }
 
@@ -61,6 +65,7 @@ void war( int charhp, int charap, vector<string> inventory_p, vector<int> invent
       cout << "You can only use each weapon once!" << endl;
       cout << "Input a number?(1 or 0): ";
       cin >> choosein;
+      cout << endl;
       bool flag = true;
       while (flag == true){
         if (choosein <=1 && choosein >=0){
@@ -74,6 +79,8 @@ void war( int charhp, int charap, vector<string> inventory_p, vector<int> invent
             foehp -= damage;
             inventory_p.erase (inventory_p.begin());
             inventory_pvalue.erase (inventory_pvalue.begin());
+            cout << endl;
+            cout << endl;
             //monster attacks
             cout << monsternames[randommonster] << " is attacking you!!! " << " watch out!! " << endl;
             charhp -= foeap;
@@ -97,12 +104,15 @@ void war( int charhp, int charap, vector<string> inventory_p, vector<int> invent
               cout << "You got only hands left;)" << endl;
               cout << "Input 0 to punch!: ";
               cin >> choosein;
+              cout << endl;
             }
           }
           if (choosein == 0){
             cout << "You attack the monster with your hands" << endl;
             damage = charap;
             foehp -= damage;
+            cout << endl;
+            cout << endl;
             //monster attacks
             cout << monsternames[randommonster] << " is attacking you!!! " << " watch out!! " << endl;
             charhp -= foeap;
@@ -125,12 +135,14 @@ void war( int charhp, int charap, vector<string> inventory_p, vector<int> invent
               cout << "Your hp is " << charhp << endl;
               cout << "Its your chance to redeem youself!" << endl;
               cin >> choosein;
+              cout << endl;
             }
           }
         }
         else{
           cout << "Oops! No such option in the inventory. Choose again: ";
           cin >> choosein;
+          cout << endl;
         }
       }
     }
