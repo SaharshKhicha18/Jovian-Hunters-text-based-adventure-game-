@@ -1,6 +1,9 @@
 #include <iostream>
 #include <cstdlib>
 using namespace std; 
+
+void random(int &gamepoints)
+{
 int randnum = rand(25);
 while loop{
 switch (randomnum){
@@ -36,6 +39,7 @@ switch (randomnum){
     #keep walking
     eventhap = 0;
     break;
+}
 }
     
     
