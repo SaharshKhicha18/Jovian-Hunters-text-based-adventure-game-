@@ -5,7 +5,13 @@ using namespace std;
 
 void hospital(map<string, int> attack_power, int health_points)
 {
-  string health_power[10] = {"First-aid kit", "endorphins shot", "glucose-D", "Vitamin-C tablets", "oxygen pack",
+  if (attack_power.size() = 3)
+  {
+    cout << "Opps! You inventory is full! Use what you got to hunt some monsters down first!" << endl;
+  }
+  else 
+  {
+    string health_power[10] = {"First-aid kit", "endorphins shot", "glucose-D", "Vitamin-C tablets", "oxygen pack",
                              "ketamine shot", "epinephrin shot", "scapel", "syringe", "surgical drill machine"};
   int hp_sp_increase[10] =  {50, 32, 28, 15, 30, 20, 30, 40, 14, 54};
   srand (time(0));
@@ -75,5 +81,6 @@ void hospital(map<string, int> attack_power, int health_points)
       break;
     }
   }
-
+  }
 }
+  
