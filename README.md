@@ -39,6 +39,6 @@ Jovian Hunters is an adventure based sci-fi text game. In the game, biohackers h
 
 - gamemanual(): Function that prints the game instructions. 
 
-- main():
+- main(): Function controlling the overall game flow. Allowing functionalities like start a new game, load game, view manual, or exit. The function links all the functions defined above in an orderly manner. 
 
 
