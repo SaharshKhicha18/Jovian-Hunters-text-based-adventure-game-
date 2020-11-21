@@ -81,7 +81,7 @@ void hospital(vector<string> &inventory_p, vector<int> &inventory_pvalue, int &h
         else
         {
           cout << "You get " << health_power[random_option1] << " with attack power of " << hp_sp_increase[random_option1] << endl;
-          inventory_p.push_back(health_power[random_option1]); //adding to the inventory vector
+          inventory_p.push_back(health_power[random_option1]); //adding items to the inventory vector
           inventory_pvalue.push_back(hp_sp_increase[random_option1]);
           cout << health_power[random_option1] << " is added to you inventory." << endl;
           cout << endl;
