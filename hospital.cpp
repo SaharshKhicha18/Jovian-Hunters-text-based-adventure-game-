@@ -84,7 +84,7 @@ void hospital(vector<string> &inventory_p, vector<int> &inventory_pvalue, int &h
           inventory_p.push_back(health_power[random_option1]); //adding to the inventory vector
           inventory_pvalue.push_back(hp_sp_increase[random_option1]);
           cout << health_power[random_option1] << " is added to you inventory." << endl;
-          cout << "You may use it during war with monsters. " << endl;
+          cout << endl;
         }
       }
       break;
@@ -120,7 +120,7 @@ void hospital(vector<string> &inventory_p, vector<int> &inventory_pvalue, int &h
           inventory_p.push_back(health_power[random_option2]);
           inventory_pvalue.push_back(hp_sp_increase[random_option2]);
           cout << health_power[random_option2] << " is added to you inventory." << endl;
-          cout << "You may use it during war with monsters. " << endl;
+          cout << endl;
         }
       }
       break;
@@ -154,7 +154,7 @@ void hospital(vector<string> &inventory_p, vector<int> &inventory_pvalue, int &h
           inventory_p.push_back(health_power[random_option3]);
           inventory_pvalue.push_back(hp_sp_increase[random_option3]);
           cout << health_power[random_option3] << " is added to you inventory." << endl;
-          cout << "You may use it during war with monsters. " << endl;
+          cout << endl;
         }
       }
       break;
