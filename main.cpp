@@ -36,7 +36,7 @@ int main()
   sleep(1);
   cout << endl;
 
-  cout << "Welcome to Jovian Hunters" << endl;
+  cout << "Welcome to Jovian Hunters" << endl; //game menu
   cout << "Input 1 to start a new game" << endl;
   cout << "Input 2 to load game" << endl;
   cout << "Input 3 to see how to play" << endl;
@@ -44,7 +44,7 @@ int main()
   cout << "Input 1, 2, 3 or 4 -> ";
   int input;
   cin >> input;
-  while (input < 1 && input >4){
+  while (input < 1 && input >4){ // checks invalid input
     cout << "Invalid input!" << endl;
     cout << "Input again please -> ";
     cin >> input;
@@ -70,14 +70,14 @@ int main()
       cout << "Several places in the city hospitals, ammunition shop etc. where you can revive your health points as well as attack power using different weapons" <<endl;
       cout << endl;
 
-      gamecharacters(charname, op);
+      gamecharacters(charname, op); //choose a character name
       cout << "Choose your character name. You can choose you own name or choose the options provided to you by Jovian Hunters!" << endl;
       cout << endl;
 
       cout << charname << " choose a direction to begin. Input E, W, N, S for East, West, North and South respectively! -> ";
       cin >> direc;
       cout << endl;
-      while (direc.length() != 1 || (direc.at(0) != 'E' && direc.at(0) != 'e' && direc.at(0) != 'W' && direc.at(0) != 'w' && direc.at(0) != 'S' && direc.at(0) != 's' && direc.at(0) != 'N' && direc.at(0) != 'n')){
+      while (direc.length() != 1 || (direc.at(0) != 'E' && direc.at(0) != 'e' && direc.at(0) != 'W' && direc.at(0) != 'w' && direc.at(0) != 'S' && direc.at(0) != 's' && direc.at(0) != 'N' && direc.at(0) != 'n')){ //choose a direction to start walking
         cout << "Invalid direction! Come on you can do better. Choose from the above directions -> ";
         cin >> direc;
         cout << endl;
@@ -96,7 +96,7 @@ int main()
       }
       break;
     }
-    if (input == 2)
+    if (input == 2) // to restore saved game
     {
       string filename;
       cout << "Input your character name from your previous turn to load the game" << endl;
@@ -104,7 +104,7 @@ int main()
       filename = "Saved_games/" + filename;
       ifstream fin;
       fin.open(filename);
-      if (fin.fail())
+      if (fin.fail()) // check if any saved file exists
       {
         cout << "No saved data with that name exists." << endl;
         cout << "Input 1 to start a new game" << endl;
@@ -117,12 +117,12 @@ int main()
       }
       else
       {
-        loadgame(filename, charhp, charname, inventory_p, inventory_pvalue, monsternames, monster_hp, monster_ap, gamepoints);
+        loadgame(filename, charhp, charname, inventory_p, inventory_pvalue, monsternames, monster_hp, monster_ap, gamepoints); //load the saved game
         break;
       }
 
     }
-    if (input == 3)
+    if (input == 3) //game instructions
     {
       gamemanual();
       cout << "Input 1 to start a new game" << endl;
@@ -138,20 +138,20 @@ int main()
     }
   }
 
-    while (charhp >0 && gamepoints < 80){
-      random(gamepoints, charhp, charap, inventory_p, inventory_pvalue, monsternames, monster_hp, monster_ap, eventhap, charname);
+    while (charhp >0 && gamepoints < 80){ //game end conditions
+      random(gamepoints, charhp, charap, inventory_p, inventory_pvalue, monsternames, monster_hp, monster_ap, eventhap, charname); //random event generator
       if (eventhap == 1 && charhp>0){
-        cout << "Lets move forward as you still have " << 80 - gamepoints << " steps to get to the Kohinoor"<<endl;
+        cout << "Lets move forward as you still have " << 80 - gamepoints << " steps to get to the Kohinoor"<<endl; //shows gamepoints left to reach end
       }
       cout << endl;
     }
-    if (gamepoints >= 80){
+    if (gamepoints >= 80){ //if player wins
       cout << "Congratulations!! " << charname << " You have done what many find impossible." << endl;
       cout << "Saved the KOHINOOR from the evil." << endl;
       cout << "After defeating 8 dangerous monsters, you reach the stage where the bright sunlight reflects through KOHINOOR's edges striking your eyes. "<< endl;
       cout << "You truly deserve to be rewarded by the Queen of England." <<endl;
       ifstream fin;
-      fin.open("winning.txt");
+      fin.open("winning.txt"); //winning graphic
       string lines;
       while (getline(fin, lines)){
         cout << lines << endl;
