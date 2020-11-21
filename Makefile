@@ -24,11 +24,14 @@ savegame.o: Jovian.h savegame.cpp
 loadgame.o: Jovian.h loadgame.cpp
 	g++ $(FLAGS) -c loadgame.cpp
 
+gamemanual.o: Jovian.h gamemanual.cpp
+	g++ $(FLAGS) -c gamemanual.cpp
+
 main.o: Jovian.h main.cpp
 	g++ $(FLAGS) -c main.cpp
 
-main: gamecharacters.o hospital.o ammunationshop.o pawnshop.o war.o randomevents.o savegame.o loadgame.o main.o
-	g++ $(FLAGS) gamecharacters.o hospital.o ammunationshop.o pawnshop.o war.o randomevents.o savegame.o loadgame.o main.o -o main
+main: gamecharacters.o hospital.o ammunationshop.o pawnshop.o war.o randomevents.o savegame.o loadgame.o gamemanual.o main.o
+	g++ $(FLAGS) gamecharacters.o hospital.o ammunationshop.o pawnshop.o war.o randomevents.o savegame.o loadgame.o gamemanual.o main.o -o main
 
 clean:
 	rm -rf main *.o
