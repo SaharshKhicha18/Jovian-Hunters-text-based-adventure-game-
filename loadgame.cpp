@@ -6,26 +6,27 @@
 #include "Jovian.h"
 using namespace std;
 
+//load previous game
 void loadgame(string filename, int &charhp, string &charname, vector<string> &inventory_p, vector<int> &inventory_pvalue, vector<string> &monsternames, vector<int> &monster_hp, vector<int> &monster_ap, int &gamepoints)
 {
-    filename = "Saved_games/" + filename;
+    filename = "Saved_games/" + filename; // to save files in Saved_games folder
     ifstream fin;
     fin.open(filename);
     string lines;
     int linetracker = 1;
     while (getline(fin, lines))
     {
-      if (linetracker == 1)
+      if (linetracker == 1) //for first line
       {
         int items;
-        istringstream iss(lines);
+        istringstream iss(lines); 
         while (iss >> items)
         {
-          charhp = items;
+          charhp = items; //character health points 
         }
       }
 
-      if (linetracker == 2)
+      if (linetracker == 2) //for second line of text file
       {
         string items;
         istringstream iss(lines);
@@ -35,13 +36,13 @@ void loadgame(string filename, int &charhp, string &charname, vector<string> &in
         }
       }
 
-      if (linetracker == 3)
+      if (linetracker == 3) // for third line of text file
       {
         string items;
         istringstream iss(lines);
         while (iss >> items)
         {
-          inventory_p.push_back(items);
+          inventory_p.push_back(items); //insert the value in the inventory vector
         }
       }
 
@@ -51,7 +52,7 @@ void loadgame(string filename, int &charhp, string &charname, vector<string> &in
         istringstream iss(lines);
         while (iss >> items)
         {
-          inventory_pvalue.push_back(items);
+          inventory_pvalue.push_back(items); //insert weapon value in the inventory vector
         }
       }
 
@@ -61,7 +62,7 @@ void loadgame(string filename, int &charhp, string &charname, vector<string> &in
         istringstream iss(lines);
         while (iss >> items)
         {
-          monsternames.push_back(items);
+          monsternames.push_back(items); 
         }
       }
 
