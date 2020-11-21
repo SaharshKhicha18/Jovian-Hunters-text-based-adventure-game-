@@ -23,7 +23,7 @@ void hospital(vector<string> &inventory_p, vector<int> &inventory_pvalue, int &h
   cout << "Input " << 1 << " to pick " << health_power[random_option1];
   //if the random number is less than 5, it belongs to health
   if (random_option1 < 5){
-    cout << ". This will revive your health points" << endl; //description of what the item does
+    cout << ". This will revive your health points" << endl; //description of what happens to the items
   }
   else{
     cout << ". This will be loaded to your inventory for future monster attacks" << endl;
@@ -70,7 +70,7 @@ void hospital(vector<string> &inventory_p, vector<int> &inventory_pvalue, int &h
           cout << "You get " << health_power[random_option1] << " with " << hp_sp_increase[random_option1] << " health points" << endl;
           health_points += hp_sp_increase[random_option1]; //adding the health value of the item to health directly
           if (health_points > 120)
-            health_points = 120;
+            health_points = 120; //if health increased beyond over 120, set it to 120.
           cout << "Your health is increased to " << health_points << endl; //confirmation of the health increase after picking the health increasing item
         }
       }
