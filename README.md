@@ -14,14 +14,12 @@ Jovian Hunters is an adventure based sci-fi text game. In the game, biohackers h
 - As the game begins, the player is asked to choose a direction to head to, on all the directions random occurances of hospital, ammunation store, pawn shop and monsters is set with different probabilites. 
 - If the player encounters hosital, ammunationstore or pawnshop, he/she will be prompted with 3 of options chosen randomly from a pool of items to choose from. The items (i.e. First-aid_kit, Silver_knife, etc.) depending on the type will be either added to inventory, or its value will be added to healthpoints.
 - The max limits of items inventory can hold is 3 and max health player can have is 120. 
-- If the player encounters 
+- If the player encounters a monster, then the war between the monster and the player begins. The monsters attacks first, its damage is directly reflected on the player's health. After which it is players's turn to attack, the player can use items from his inventory with varying powers to attack the monsters or simply use a punch with fixed power of 25 to attack the monster. 
+- After every time of defeating the monster the game points points are added by 10. After defeating 8 monsters in total, the game points acquired is 80 and the player is the winner.
+- If the player gets defeated by the monster, the game is over. 
+- After all the random events, such as hospital, monsters, etc. the game is saved with the file name as the player's name. If the player wishes to continue from there, then he/she can input 2 at the begining menu to reload the game. 
  
-**Dynamic memory management**
-The health of the player as well as the monster’s health will be continuously updated during the battle. Along with that the inventory based on the scenarios will be dynamically updated as well.
- 
-**File input/output (e.g., for loading/saving game status)**
-After the battle with a monster is won. The game reaches a checkpoint and the player will be prompted to save the game. 
- 
-**Program codes in multiple files**
-Different scenarios will be coded in different files. 
+**List of functions implemented in the game**
+
+
 
