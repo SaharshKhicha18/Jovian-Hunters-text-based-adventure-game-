@@ -2,7 +2,7 @@
 Group No.: 116
 Group Members: Saharsh Khicha (3035596383), Darsh Vaghani (3035573393)
 
-Jovian Hunters is an adventure based sci-fi text game. In the game, biohackers have developed monsters that take over (hijack) different parts of the world. The locations of the monsters are hidden and after each monster is defeated, the difficulty level increases as the monster becomes more powerful and has upgraded weapons. The motive of the game is for a player to choose a character and go on the quest to hunt monsters. The ultimate monster holds the diamond 'Kohinoor' that has the powers to restore peace in the world (Game Victory). During course of the game, the player encounters multiple scenarios where the player can make choices to upgrade his inventory and health in order to prepare and fight the monster.
+Jovian Hunters is an adventure based sci-fi text game. In the game, biohackers have developed monsters that took over (hijack) the world. There are about 12 monsters hiding at unknown waiting to be confronted by the player. The motive of the game is for a player to choose a character and go on the quest to hunt monsters. The monster's league will be crashed when total of 8 monsters are defeated out of 12. The ultimate monster (8th one) holds the diamond 'Kohinoor' that has the powers to restore peace in the world. Defeating this monster leads to Game Victory. During course of the game, the player encounters multiple scenarios where the player can make choices to upgrade his inventory and health in order to prepare and fight the monster. The occurance of all the events including monsters, hospitals, pawnshops and ammunation stores is at random. 
 
 **Generation of random game sets or events**
 **Data structures for storing game status**
