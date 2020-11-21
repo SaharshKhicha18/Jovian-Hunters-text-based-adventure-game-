@@ -124,7 +124,7 @@ int main()
     }
     if (input == 3)
     {
-      cout << "Game instructions" << endl;
+      gamemanual();
       cout << "Input 1 to start a new game" << endl;
       cout << "Input 2 to load game" << endl;
       cout << "Input 3 to see how to play" << endl;
