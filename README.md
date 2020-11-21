@@ -21,5 +21,24 @@ Jovian Hunters is an adventure based sci-fi text game. In the game, biohackers h
  
 **List of functions implemented in the game**
 
+- hospital(): Function that gives 3 options to choose one from a pool of items available at a hospital to either add it to inventory or to increase his/her health points.
+
+- pawnshop(): Function that gives 3 options to choose one from a pool of items available at a pawnshop to either add it to inventory or to increase his/her health points.
+
+- ammunationshop(): Function that gives 3 options to choose one from a pool of items available at a ammunation store to add it to inventory.
+
+- war(): Function that runs the war between the player and a random monster from a pool of monsters. It determines the winner of the battle and also if the game is over or continued. It upadates all the health and power parameters. 
+
+- random(): Function that determines what the players encounters. For instance, hospital, pawnshop, etc. The probabilities of the different situations is also varied. 
+
+- gamecharacters(): Function that takes the player's name for the game or ask to choose from a defaul set of characters in the game. 
+
+- savegame(): Function that after each of the random events, saves the important variables of the player and the monsters defeated. 
+
+- loadgame(): Function that restores the game from the saved game data based on the character name of the previous game.  
+
+- gamemanual(): Function that prints the game instructions. 
+
+- main():
 
 
